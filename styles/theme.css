@@ -26,3 +26,12 @@ a:hover {
 a.text-white:hover {
   color: white !important;
 }
+
+/* Keep footer link colors as specified in component */
+footer a {
+  color: inherit !important;
+}
+
+footer a:hover {
+  color: inherit !important;
+}
