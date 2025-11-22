@@ -1,0 +1,28 @@
+/* styles/theme.css */
+:root {
+  /* Primary brand color extracted from logo (placeholder) */
+  --primary-color: #0d524b;
+  --secondary-color: #ff6b2d;
+  --accent-color: #9ab7b4;
+  --font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #fafafa;
+  color: #333;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Override hover color for CTA buttons to keep white text */
+a.text-white:hover {
+  color: white !important;
+}
