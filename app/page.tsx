@@ -59,30 +59,45 @@ export default function Home() {
         />
         
         {/* Content */}
-        <div className="relative h-full max-w-7xl mx-auto px-4 flex items-center">
-          <div className="max-w-2xl text-white">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Authentic Gujarati Flavors,<br />
-              Crafted with Love & Hygiene
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl mb-8 text-gray-100">
-              Handmade Khakhra & Traditional Indian Snacks<br />
-              Made Fresh | 100% Vegetarian | No Preservatives
-            </p>
-            <div className="flex gap-4 flex-wrap">
-              <Link
-                href="/shop"
-                className="px-8 py-4 text-white text-lg font-semibold rounded-lg transition-all hover:opacity-90 shadow-lg"
-                style={{ backgroundColor: 'var(--secondary-color)' }}
-              >
-                Shop Our Bestsellers
-              </Link>
-              <Link
-                href="/combos"
-                className="px-8 py-4 bg-white text-[#0d524b] text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-lg"
-              >
-                Explore Combos
-              </Link>
+        <div className="relative h-full max-w-7xl mx-auto px-4 flex items-end pb-12 md:pb-16">
+          <div className="w-full">
+            {/* Left Side - Text and Buttons */}
+            <div className="max-w-2xl text-white">
+              {/* Shivam Logo Above Title */}
+              <div className="mb-6">
+                <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-2xl border-4 border-white">
+                  <Image 
+                    src="/shivam_tm.png" 
+                    alt="Shivam Foods" 
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                Authentic Gujarati Flavors
+              </h1>
+              <p className="text-lg sm:text-xl md:text-2xl mb-8 text-gray-100">
+                Handmade Khakhra & Traditional Indian Snacks<br />
+                Made Fresh | 100% Vegetarian | No Preservatives
+              </p>
+              <div className="flex gap-4 flex-wrap">
+                <Link
+                  href="/shop"
+                  className="px-8 py-4 text-white text-lg font-semibold rounded-lg transition-all hover:opacity-90 shadow-lg"
+                  style={{ backgroundColor: 'var(--secondary-color)' }}
+                >
+                  Shop Our Bestsellers
+                </Link>
+                <Link
+                  href="/combos"
+                  className="px-8 py-4 bg-white text-[#0d524b] text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-lg"
+                >
+                  Explore Combos
+                </Link>
+              </div>
             </div>
           </div>
         </div>

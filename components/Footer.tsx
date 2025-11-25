@@ -62,6 +62,13 @@ const Footer = () => {
                         <h4 className="text-lg font-semibold mb-4" style={{ color: 'var(--secondary-color)' }}>Contact Us</h4>
                         <ul className="space-y-3 text-gray-200">
                             <li className="flex items-start gap-2">
+                                <span>📍</span>
+                                <div>
+                                    <p className="font-medium">Address</p>
+                                    <p className="text-sm">C-19, Marudhar Indl Estate,<br />Goodev Road, Bhayander East<br />Thane, Maharashtra - 401105</p>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-2">
                                 <span>📞</span>
                                 <div>
                                     <p className="font-medium">Phone</p>
@@ -80,13 +87,6 @@ const Footer = () => {
                                 <div>
                                     <p className="font-medium">WhatsApp</p>
                                     <a href="https://wa.me/918850977911" target="_blank" rel="noopener noreferrer" className="hover:text-white">Chat with us</a>
-                                </div>
-                            </li>
-                            <li className="flex items-start gap-2">
-                                <span>🕒</span>
-                                <div>
-                                    <p className="font-medium">Business Hours</p>
-                                    <p>Mon-Sat: 9:00 AM - 6:00 PM</p>
                                 </div>
                             </li>
                         </ul>
